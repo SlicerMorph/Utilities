@@ -31,8 +31,7 @@ class RAS2LPS(ScriptedLoadableModule):
     self.parent.dependencies = []
     self.parent.contributors = ["Arthur Porto (Seattle Children's), Sara Rolfe (UW), Murat Maga (UW)"] # replace with "Firstname Lastname (Organization)"
     self.parent.helpText = """
-      This module takes a directory of volumes and segments them using a user-supplied threshold value. The output segments are converted to models and saved in the
-      output directory.
+      This module takes a directory of mesh files saved in RAS coordinates, and converts them to LPS coordinates. Convenient to convert the modules that are saved prior to change LPS in Feb 2020. See https://discourse.slicer.org/t/model-files-are-now-saved-in-lps-coordinate-system/10446
       """
     self.parent.helpText += self.getDefaultModuleDocumentationLink()
     self.parent.acknowledgementText = """
